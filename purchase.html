@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Purchase Altarbound: Whisperwake — Premium Minecraft Bedrock map by XLCreations Workshop."/>
+  <title>XLWORKSHOP — Purchase</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    /* ── Purchase page specific styles ── */
+    .purchase-hero {
+      text-align: center;
+      padding: 5rem 2rem 3rem;
+      position: relative;
+      z-index: 10;
+      border-bottom: 1px solid var(--border-wood);
+      background: linear-gradient(to bottom, rgba(28,20,12,0.6), transparent);
+    }
+    .purchase-hero .sub {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--campfire-gold);
+      margin-bottom: 0.75rem;
+    }
+    .purchase-hero h1 {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      font-weight: 700;
+      color: var(--moonlight);
+      margin-bottom: 0.5rem;
+    }
+    .purchase-hero .tagline {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      color: var(--text-muted);
+      font-size: 1rem;
+      max-width: 480px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* ── Product Card ── */
+    .product-card {
+      background: linear-gradient(135deg, rgba(28,20,12,0.95), rgba(20,14,8,0.95));
+      border: 1px solid var(--border-wood);
+      border-radius: 16px;
+      overflow: hidden;
+      max-width: 720px;
+      margin: 0 auto 3rem;
+    }
+    .product-card-header {
+      padding: 2rem;
+      border-bottom: 1px solid var(--border-wood);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      background: linear-gradient(to right, rgba(92,61,34,0.15), transparent);
+    }
+    .product-title-block {}
+    .product-series {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--wood-light);
+      margin-bottom: 0.3rem;
+    }
+    .product-name {
+      font-family: 'Cinzel', serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--warm-wood);
+      line-height: 1.1;
+    }
+    .product-chapter {
+      font-size: 0.8rem;
+      color: var(--wood-light);
+      margin-top: 0.25rem;
+      letter-spacing: 0.05em;
+    }
+    .price-block {
+      text-align: right;
+    }
+    .price-usd {
+      font-family: 'Cinzel', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--campfire-gold);
+      line-height: 1;
+    }
+    .price-php {
+      font-size: 0.9rem;
+      color: var(--wood-light);
+      margin-top: 0.25rem;
+    }
+    .product-card-body {
+      padding: 1.75rem 2rem;
+    }
+    .product-desc {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+    }
+    .product-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-bottom: 1.25rem;
+    }
+    .preorder-notice {
+      background: rgba(245,158,11,0.08);
+      border: 1px solid rgba(245,158,11,0.25);
+      border-radius: 10px;
+      padding: 0.875rem 1.1rem;
+      display: flex;
+      gap: 0.6rem;
+      align-items: flex-start;
+    }
+    .preorder-notice p {
+      font-size: 0.85rem;
+      color: #fde68a;
+      line-height: 1.6;
+    }
+
+    /* ── Payment Methods ── */
+    .payment-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      max-width: 720px;
+      margin: 0 auto 3rem;
+    }
+    .payment-card {
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid transparent;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .payment-card:hover {
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    }
+    .payment-card.gcash {
+      background: linear-gradient(135deg, rgba(0,80,160,0.15), rgba(0,60,120,0.1));
+      border-color: rgba(0,120,220,0.25);
+    }
+    .payment-card.gcash:hover { border-color: rgba(0,120,220,0.5); }
+    .payment-card.kofi {
+      background: linear-gradient(135deg, rgba(245,158,11,0.12), rgba(180,100,0,0.08));
+      border-color: rgba(245,158,11,0.2);
+    }
+    .payment-card.kofi:hover { border-color: rgba(245,158,11,0.45); }
+
+    .payment-card-header {
+      padding: 1.25rem 1.5rem 1rem;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .payment-icon { font-size: 1.5rem; }
+    .payment-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--moonlight);
+    }
+    .payment-subtitle {
+      font-size: 0.72rem;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .payment-card-body {
+      padding: 1.25rem 1.5rem;
+    }
+    .payment-card-body p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 1rem;
+    }
+    .qr-wrapper {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .qr-wrapper img {
+      width: 180px;
+      height: 180px;
+      border-radius: 10px;
+      border: 2px solid rgba(0,120,220,0.3);
+      display: inline-block;
+    }
+    .qr-label {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      margin-top: 0.4rem;
+      text-align: center;
+    }
+    .gcash-price {
+      text-align: center;
+      font-family: 'Cinzel', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #60a5fa;
+      margin-bottom: 1rem;
+    }
+    .btn-gcash-form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      width: 100%;
+      padding: 0.7rem 1rem;
+      background: rgba(0,100,200,0.2);
+      border: 1px solid rgba(0,120,220,0.4);
+      border-radius: 8px;
+      color: #93c5fd;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.25s;
+      letter-spacing: 0.04em;
+    }
+    .btn-gcash-form:hover {
+      background: rgba(0,100,200,0.35);
+      border-color: rgba(0,120,220,0.7);
+      color: #bfdbfe;
+    }
+    .kofi-price {
+      text-align: center;
+      font-family: 'Cinzel', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--campfire-gold);
+      margin-bottom: 1rem;
+    }
+    .btn-kofi {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      width: 100%;
+      padding: 0.7rem 1rem;
+      background: rgba(245,158,11,0.15);
+      border: 1px solid rgba(245,158,11,0.35);
+      border-radius: 8px;
+      color: #fcd34d;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.25s;
+      letter-spacing: 0.04em;
+    }
+    .btn-kofi:hover {
+      background: rgba(245,158,11,0.28);
+      border-color: rgba(245,158,11,0.6);
+      color: #fef08a;
+    }
+
+    /* ── How it Works ── */
+    .how-it-works {
+      max-width: 720px;
+      margin: 0 auto 3rem;
+    }
+    .how-it-works h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.3rem;
+      color: var(--moonlight);
+      margin-bottom: 1.25rem;
+      text-align: center;
+    }
+    .steps-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+    .step {
+      text-align: center;
+      padding: 1.25rem 0.75rem;
+      background: rgba(17,34,19,0.5);
+      border: 1px solid var(--border-moss);
+      border-radius: 12px;
+      position: relative;
+    }
+    .step-num {
+      width: 28px;
+      height: 28px;
+      background: var(--pine-green);
+      border-radius: 50%;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 0.75rem;
+    }
+    .step-icon { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    .step-title {
+      font-family: 'Cinzel', serif;
+      font-size: 0.78rem;
+      color: var(--leaf-green);
+      margin-bottom: 0.3rem;
+    }
+    .step-desc {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      line-height: 1.5;
+    }
+
+    /* ── Fine print ── */
+    .fine-print {
+      max-width: 720px;
+      margin: 0 auto;
+      background: rgba(17,17,17,0.4);
+      border: 1px solid var(--stone-mid);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+    }
+    .fine-print h3 {
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+    .fine-print ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .fine-print ul li {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      padding-left: 1rem;
+      position: relative;
+      line-height: 1.5;
+    }
+    .fine-print ul li::before {
+      content: '·';
+      position: absolute;
+      left: 0;
+      color: var(--pine-green);
+    }
+
+    @media (max-width: 640px) {
+      .payment-grid { grid-template-columns: 1fr; }
+      .steps-row { grid-template-columns: 1fr 1fr; }
+      .product-card-header { flex-direction: column; align-items: flex-start; }
+      .price-block { text-align: left; }
+    }
+    @media (max-width: 380px) {
+      .steps-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="stars-layer"></div>
+<div class="fog-layer"></div>
+<div class="fog-layer fog-mid"></div>
+<div class="forest-silhouette"></div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon">🌲</div>
+    <span class="nav-logo-text">XLWORKSHOP</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li class="nav-dropdown">
+      <a href="#">Creations</a>
+      <div class="dropdown-menu">
+        <a href="maps.html">🗺️ Maps</a>
+        <a href="texture-packs.html">🎨 Texture Packs</a>
+        <a href="paid-maps.html">⭐ Paid Maps</a>
+      </div>
+    </li>
+    <li><a href="help.html">Help</a></li>
+  </ul>
+  <button class="nav-hamburger" id="navBurger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">🏠 Home</a>
+  <span class="mobile-section-label">Creations</span>
+  <a href="maps.html">🗺️ Maps</a>
+  <a href="texture-packs.html">🎨 Texture Packs</a>
+  <a href="paid-maps.html">⭐ Paid Maps</a>
+  <a href="help.html">❓ Help</a>
+</div>
+
+<div class="page-content">
+
+  <!-- Purchase Hero -->
+  <div class="purchase-hero">
+    <p class="sub">⭐ Premium Map — Pre-order</p>
+    <h1>Get the Map</h1>
+    <p class="tagline">Support the workshop and secure your copy of Altarbound: Whisperwake before it releases.</p>
+  </div>
+
+  <div class="section" style="padding-top:3rem;">
+
+    <!-- Product Card -->
+    <div class="product-card fade-up">
+      <div class="product-card-header">
+        <div class="product-title-block">
+          <p class="product-series">Altarbound Series · Chapter 1</p>
+          <div class="product-name">Whisperwake</div>
+          <p class="product-chapter">Minecraft Bedrock Edition · Original Horror Map</p>
+        </div>
+        <div class="price-block">
+          <div class="price-usd">$3</div>
+          <div class="price-php">₱178 via InstaPay / GCash</div>
+        </div>
+      </div>
+      <div class="product-card-body">
+        <p class="product-desc">
+          Enter the world of Altarbound — a mystery and horror map that takes you to unsettling places where every corner hides secrets and every step could bring danger. Solve cryptic puzzles, uncover hidden lore, and survive encounters with eerie creatures lurking in the dark.
+        </p>
+        <div class="product-tags">
+          <span class="badge badge-red">Horror</span>
+          <span class="badge badge-blue">Mystery</span>
+          <span class="badge badge-gray">Singleplayer</span>
+          <span class="badge badge-green">Bedrock Edition</span>
+        </div>
+        <div class="preorder-notice">
+          <span>⚠️</span>
+          <p><strong>Pre-order:</strong> This map is currently in development. Purchasing now reserves your copy. You will receive the map file via Discord DM once it is released. Thank you for your patience and support!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Payment Methods -->
+    <h2 style="font-family:'Cinzel',serif;font-size:1.2rem;color:var(--moonlight);text-align:center;margin-bottom:1.5rem;" class="fade-up">Choose Payment Method</h2>
+
+    <div class="payment-grid fade-up">
+
+      <!-- GCash / InstaPay -->
+      <div class="payment-card gcash">
+        <div class="payment-card-header">
+          <span class="payment-icon">📱</span>
+          <div>
+            <div class="payment-title">GCash / InstaPay</div>
+            <div class="payment-subtitle">🇵🇭 Philippines Only</div>
+          </div>
+        </div>
+        <div class="payment-card-body">
+          <p>Scan the QR code using your GCash or any InstaPay-compatible banking app, then fill out the order form after paying.</p>
+          <div class="gcash-price">₱178</div>
+          <div class="qr-wrapper">
+            <img src="images/qr-gcash.png" alt="GCash InstaPay QR Code — ₱178"/>
+            <p class="qr-label">Scan with GCash or any InstaPay app</p>
+          </div>
+          <a href="https://forms.gle/4oWc1KgC8FtfhBcb7" target="_blank" class="btn-gcash-form">
+            📋 Fill Order Form After Paying
+          </a>
+        </div>
+      </div>
+
+      <!-- Ko-fi / International -->
+      <div class="payment-card kofi">
+        <div class="payment-card-header">
+          <span class="payment-icon">☕</span>
+          <div>
+            <div class="payment-title">Ko-fi</div>
+            <div class="payment-subtitle">🌍 International · USD</div>
+          </div>
+        </div>
+        <div class="payment-card-body">
+          <p>Pay securely via Ko-fi using a debit card, credit card, or PayPal. After payment, leave your Discord username in the Ko-fi message so I can send your map.</p>
+          <div class="kofi-price">$3 USD</div>
+          <div style="background:rgba(245,158,11,0.07);border:1px solid rgba(245,158,11,0.15);border-radius:8px;padding:0.875rem;margin-bottom:1rem;font-size:0.8rem;color:#fde68a;line-height:1.6;">
+            💬 In the Ko-fi message, include:<br/>
+            <strong>Your Discord username</strong> — so I can find you and send the map when it's ready.
+          </div>
+          <a href="https://ko-fi.com/xl300creations" target="_blank" class="btn-kofi">
+            ☕ Pay $3 on Ko-fi
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- How it Works -->
+    <div class="how-it-works fade-up">
+      <h2>🪵 How It Works</h2>
+      <div class="steps-row">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-icon">💳</div>
+          <div class="step-title">Pay</div>
+          <p class="step-desc">GCash scan or Ko-fi — choose your method and complete the payment.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-icon">📋</div>
+          <div class="step-title">Submit</div>
+          <p class="step-desc">Fill out the order form (GCash) or leave your Discord in the Ko-fi message.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-icon">✅</div>
+          <div class="step-title">Verified</div>
+          <p class="step-desc">Your payment is confirmed and your order is logged.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-icon">📦</div>
+          <div class="step-title">Delivered</div>
+          <p class="step-desc">Map file sent to your Discord DM once the map releases.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fine Print -->
+    <div class="fine-print fade-up">
+      <h3>📌 Before You Buy — Please Read</h3>
+      <ul>
+        <li>This is a <strong>pre-order</strong>. The map is still in development and does not have a confirmed release date yet.</li>
+        <li>Payments are <strong>non-refundable</strong> once submitted.</li>
+        <li>Your map will be delivered via <strong>Discord DM</strong> — make sure your DMs are open or join the server first.</li>
+        <li>You must provide your <strong>Discord username</strong> in the order form or Ko-fi message — orders without a Discord username cannot be delivered.</li>
+        <li>The map is for <strong>personal use only</strong> — do not redistribute, resell, or share the map file with others.</li>
+        <li>Questions? Reach out on <a href="https://discord.gg/Dy3G4WnKxw" target="_blank" style="color:var(--leaf-green);">Discord</a>.</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-brand-name">🌲 XLCREATIONS WORKSHOP</div>
+      <p class="footer-brand-tagline">A mountain-side workshop where Minecraft Bedrock maps are crafted with care — from concept to playable experience.</p>
+      <p class="footer-disclaimer">Not affiliated with Mojang Studios or Microsoft.</p>
+    </div>
+    <div class="footer-hiatus">
+      <strong>🌙 Creator Status</strong>
+      Currently on hiatus — check Discord for updates.
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 XLCreations Workshop · Hizaki · <a href="https://discord.gg/Dy3G4WnKxw" target="_blank">Discord</a> · <a href="https://ko-fi.com/xl300creations" target="_blank">Ko-fi</a></p>
+    <p>Hosted on GitHub Pages</p>
+  </div>
+</footer>
+
+<script src="shared.js"></script>
+</body>
+</html>

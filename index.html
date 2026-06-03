@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="XLCreations Workshop — Minecraft Bedrock map creator crafting immersive game remakes and original experiences."/>
+  <meta property="og:title" content="XLWORKSHOP"/>
+  <meta property="og:description" content="Minecraft Bedrock maps by Hizaki — game remakes, horror maps, and original adventures."/>
+  <title>XLWORKSHOP — Home</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- Ambient layers -->
+<div class="stars-layer"></div>
+<div class="fog-layer"></div>
+<div class="fog-layer fog-mid"></div>
+<div class="forest-silhouette"></div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon">🌲</div>
+    <span class="nav-logo-text">XLWORKSHOP</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li class="nav-dropdown">
+      <a href="#">Creations</a>
+      <div class="dropdown-menu">
+        <a href="maps.html">🗺️ Maps</a>
+        <a href="texture-packs.html">🎨 Texture Packs</a>
+        <a href="paid-maps.html">⭐ Paid Maps</a>
+      </div>
+    </li>
+    <li><a href="help.html">Help</a></li>
+  </ul>
+  <button class="nav-hamburger" id="navBurger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">🏠 Home</a>
+  <span class="mobile-section-label">Creations</span>
+  <a href="maps.html">🗺️ Maps</a>
+  <a href="texture-packs.html">🎨 Texture Packs</a>
+  <a href="paid-maps.html">⭐ Paid Maps</a>
+  <a href="help.html">❓ Help</a>
+</div>
+
+<div class="page-content">
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-moon"></div>
+    <div class="hero-inner">
+      <div class="hero-eyebrow">Minecraft Bedrock Edition</div>
+      <h1 class="hero-title">XL<span>CREATIONS</span></h1>
+      <p class="hero-subtitle">Workshop</p>
+      <p class="hero-bio">
+        Hello, guild members! I'm <strong style="color:var(--leaf-green)">Hizaki</strong>, a Minecraft Bedrock map creator.
+        I recreate popular games as fully playable Minecraft experiences, and develop original maps and projects of my own.
+        From free adventures to premium paid experiences — every build is crafted with care.
+      </p>
+      <div class="hero-socials">
+        <a href="https://youtube.com/@xl300creations12" target="_blank" class="social-btn youtube">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
+          YouTube
+        </a>
+        <a href="https://discord.gg/Dy3G4WnKxw" target="_blank" class="social-btn discord">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3c-.2.4-.5.9-.7 1.3a18.3 18.3 0 0 0-5.4 0A13.7 13.7 0 0 0 8.6 3 19.9 19.9 0 0 0 3.7 4.4C.5 9.3-.3 14 .1 18.6a20 20 0 0 0 6 3 14.7 14.7 0 0 0 1.3-2.1 13 13 0 0 1-2-.9l.5-.4a14.3 14.3 0 0 0 12.2 0l.5.4a13 13 0 0 1-2 1 14.4 14.4 0 0 0 1.3 2 20 20 0 0 0 6-3c.5-5.2-.8-9.8-3.6-14.2zM8 15.5c-1.2 0-2.1-1.1-2.1-2.4S6.8 10.6 8 10.6s2.1 1.1 2.1 2.5S9.1 15.5 8 15.5zm8 0c-1.2 0-2.1-1.1-2.1-2.4s1-2.5 2.1-2.5 2.1 1.1 2.1 2.5-1 2.4-2.1 2.4z"/></svg>
+          Discord
+        </a>
+        <a href="https://ko-fi.com/xl300creations" target="_blank" class="social-btn kofi">
+          ☕ Support on Ko-fi
+        </a>
+      </div>
+      <div class="hero-cta-row">
+        <a href="maps.html" class="btn-primary">🗺️ Browse Maps</a>
+        <a href="paid-maps.html" class="btn-secondary">⭐ Premium Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── DIVIDER ── -->
+  <div style="max-width:1200px;margin:0 auto;padding:0 2rem;">
+    <div class="nature-divider"><span class="nature-divider-icon">🌿</span></div>
+  </div>
+
+  <!-- ── FEATURED MAPS ── -->
+  <section class="section fade-up">
+    <div class="section-heading">
+      <p class="label">🗺️ Featured Creations</p>
+      <h2>Explore the Workshop</h2>
+      <p>A curated look at maps built through creativity and experimentation — each one a fully playable Minecraft experience.</p>
+    </div>
+
+    <div class="cards-grid">
+
+      <!-- Poppy Playtime CH2 -->
+      <div class="map-card fade-up">
+        <div class="map-card-img-placeholder">🏭</div>
+        <div class="map-card-body">
+          <div class="map-card-badges">
+            <span class="badge badge-red">Horror</span>
+            <span class="badge badge-green">Available</span>
+          </div>
+          <div class="map-card-title">Poppy Playtime</div>
+          <div class="map-card-sub">Chapter 2 — Fly in a Web</div>
+          <p class="map-card-desc">After Huggy Wuggy's fall, go deeper into the factory. A new terror awaits — Mommy Long Legs. Escape her web of games and uncover the secrets buried beneath decades of silence.</p>
+          <div class="map-card-meta">
+            <span>🎮 Bedrock</span><span class="sep">·</span>
+            <span>📦 v1.18.32</span>
+          </div>
+          <div class="map-card-actions">
+            <a href="https://link-center.net/653907/poppy-playtime-ch2-map" target="_blank" class="btn-download">⬇ Download</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Garten of BanBan -->
+      <div class="map-card fade-up">
+        <div class="map-card-img-placeholder">🏫</div>
+        <div class="map-card-body">
+          <div class="map-card-badges">
+            <span class="badge badge-red">Horror</span>
+            <span class="badge badge-green">Available</span>
+          </div>
+          <div class="map-card-title">Garten of BanBan</div>
+          <div class="map-card-sub">Chapter 1</div>
+          <p class="map-card-desc">Enter Banban's Kindergarten and make some friends. Explore the mysterious establishment, don't lose your sanity, and uncover the horrifying truth — you are far from alone.</p>
+          <div class="map-card-meta">
+            <span>🎮 Bedrock</span><span class="sep">·</span>
+            <span>📦 v1.18.32</span>
+          </div>
+          <div class="map-card-actions">
+            <a href="https://link-center.net/653907/garten-of-banban-map" target="_blank" class="btn-download">⬇ Download</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- DOORS HOTEL+ DEMO -->
+      <div class="map-card fade-up">
+        <div class="map-card-img-placeholder">🚪</div>
+        <div class="map-card-body">
+          <div class="map-card-badges">
+            <span class="badge badge-amber">Demo</span>
+            <span class="badge badge-green">Available</span>
+          </div>
+          <div class="map-card-title">DOORS Hotel+</div>
+          <div class="map-card-sub">Demo</div>
+          <p class="map-card-desc">Navigate a mysterious hotel with 100 rooms, avoiding dangerous entities with unique mechanics. This demo lets you experience the atmosphere and early floors of this Roblox classic — now in Minecraft.</p>
+          <div class="map-card-meta">
+            <span>🎮 Bedrock</span><span class="sep">·</span>
+            <span>📦 v1.20.50</span>
+          </div>
+          <div class="map-card-actions">
+            <a href="https://www.mediafire.com/file/igrb4uus4deu816/DOORS+MAP+DEMO.mcworld/file" target="_blank" class="btn-download">⬇ Download</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center; margin-top:2.5rem;">
+      <a href="maps.html" class="btn-secondary">View All Maps →</a>
+    </div>
+  </section>
+
+  <!-- ── CAMPFIRE DIVIDER ── -->
+  <div style="max-width:1200px;margin:0 auto;padding:0 2rem;">
+    <div class="nature-divider"><span class="nature-divider-icon">🔥</span></div>
+  </div>
+
+  <!-- ── ABOUT STRIP ── -->
+  <div class="section-full section-bg fade-up">
+    <div class="section" style="padding-top:3rem;padding-bottom:3rem;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;" class="about-grid">
+        <div>
+          <p class="label" style="font-size:0.75rem;font-weight:600;letter-spacing:0.25em;text-transform:uppercase;color:var(--moss-green);margin-bottom:0.6rem;">About the Creator</p>
+          <h2 style="font-family:'Cinzel',serif;font-size:clamp(1.4rem,3vw,2rem);color:var(--moonlight);margin-bottom:1rem;">A Workshop in the Forest</h2>
+          <p style="font-family:'Lora',serif;font-size:0.95rem;line-height:1.8;color:var(--text-muted);font-style:italic;margin-bottom:1rem;">
+            Every map starts as an idea — a game I love, a world I want to build, a challenge I want to solve. Then comes the long nights of crafting in Bedrock, testing every mechanic, refining every corner.
+          </p>
+          <p style="font-size:0.875rem;line-height:1.7;color:var(--text-muted);">
+            I focus on creating functional, immersive, and enjoyable experiences. Free maps, demos, and premium paid projects — each one built with the same care and attention to detail.
+          </p>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+          <div style="background:rgba(17,34,19,0.7);border:1px solid var(--border-moss);border-radius:12px;padding:1.5rem;text-align:center;">
+            <div style="font-size:2rem;margin-bottom:0.5rem;">🗺️</div>
+            <div style="font-family:'Cinzel',serif;font-size:1.5rem;color:var(--leaf-green);font-weight:700;">7+</div>
+            <div style="font-size:0.78rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:0.1em;">Maps Built</div>
+          </div>
+          <div style="background:rgba(17,34,19,0.7);border:1px solid var(--border-moss);border-radius:12px;padding:1.5rem;text-align:center;">
+            <div style="font-size:2rem;margin-bottom:0.5rem;">🎨</div>
+            <div style="font-family:'Cinzel',serif;font-size:1.5rem;color:var(--leaf-green);font-weight:700;">4</div>
+            <div style="font-size:0.78rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:0.1em;">Texture Packs</div>
+          </div>
+          <div style="background:rgba(17,34,19,0.7);border:1px solid var(--border-moss);border-radius:12px;padding:1.5rem;text-align:center;">
+            <div style="font-size:2rem;margin-bottom:0.5rem;">⭐</div>
+            <div style="font-family:'Cinzel',serif;font-size:1.5rem;color:var(--leaf-green);font-weight:700;">1</div>
+            <div style="font-size:0.78rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:0.1em;">Premium Series</div>
+          </div>
+          <div style="background:rgba(17,34,19,0.7);border:1px solid var(--border-moss);border-radius:12px;padding:1.5rem;text-align:center;">
+            <div style="font-size:2rem;margin-bottom:0.5rem;">🎮</div>
+            <div style="font-family:'Cinzel',serif;font-size:1.5rem;color:var(--leaf-green);font-weight:700;">BE</div>
+            <div style="font-size:0.78rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:0.1em;">Bedrock Only</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── NEED HELP ── -->
+  <section class="section fade-up" style="text-align:center;">
+    <div class="campfire-section" style="padding:0;">
+      <div class="campfire-glow">🔥</div>
+      <h2 style="font-family:'Cinzel',serif;font-size:1.8rem;color:var(--moonlight);margin-bottom:0.75rem;">New to installing maps?</h2>
+      <p style="font-family:'Lora',serif;color:var(--text-muted);font-style:italic;margin-bottom:1.5rem;max-width:440px;margin-left:auto;margin-right:auto;">Step-by-step installation guides for Android, iOS, and Windows — including how to match the right Minecraft version.</p>
+      <a href="help.html" class="btn-primary">📖 View Installation Guide</a>
+    </div>
+  </section>
+
+</div><!-- end page-content -->
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-brand-name">🌲 XLCREATIONS WORKSHOP</div>
+      <p class="footer-brand-tagline">A mountain-side workshop where Minecraft Bedrock maps are crafted with care — from concept to playable experience.</p>
+      <p class="footer-disclaimer">Not affiliated with Mojang Studios or Microsoft.</p>
+    </div>
+    <div class="footer-hiatus">
+      <strong>🌙 Creator Status</strong>
+      Currently on hiatus — check Discord for updates.
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 XLCreations Workshop · Hizaki · <a href="https://discord.gg/Dy3G4WnKxw" target="_blank">Discord</a> · <a href="https://ko-fi.com/xl300creations" target="_blank">Ko-fi</a></p>
+    <p>Hosted on GitHub Pages</p>
+  </div>
+</footer>
+
+<style>
+@media(max-width:768px){.about-grid{grid-template-columns:1fr !important;}}
+</style>
+<script src="shared.js"></script>
+</body>
+</html>
