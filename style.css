@@ -142,7 +142,7 @@ body {
   text-decoration: none;
 }
 .nav-logo-icon {
-  width: 36px; height: 36px;
+  width: 40px; height: 35px;
   background: linear-gradient(135deg, var(--pine-green), var(--moss-green));
   border-radius: 8px;
   display: flex; align-items: center; justify-content: center;
