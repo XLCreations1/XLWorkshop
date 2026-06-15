@@ -11,9 +11,11 @@
 
 ## 🪵 About
 
-This is the official website for **XLCreations Workshop** — a personal Minecraft Bedrock Edition map creation project by **Hizaki** (XLCreations). The site showcases free maps, texture packs, and premium paid experiences built from the ground up for Bedrock Edition.
+This is the official website for **XLCreations Workshop**
+-a personal Minecraft Bedrock Edition map creation project by **Hizaki** (XLCreations). The site showcases free maps, texture packs, and premium paid experiences built from the ground up for Bedrock Edition.
 
-The design follows a **nature night theme** — think a mountainside workshop surrounded by forests, rivers, stars, and campfires. Built as a full upgrade from the original Google Sites version, now hosted on GitHub Pages.
+The design follows a **nature night theme**
+-think a mountainside workshop surrounded by forests, rivers, stars, and campfires. Built as a full upgrade from the original Google Sites version, now hosted on GitHub Pages.
 
 ---
 
