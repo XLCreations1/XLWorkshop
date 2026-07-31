@@ -3,15 +3,12 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="XLCreations Workshop — Minecraft Bedrock map creator crafting immersive game remakes and original experiences."/>
-  <meta property="og:title" content="XLWORKSHOP"/>
-  <meta property="og:description" content="Minecraft Bedrock maps by Hizaki — game remakes, horror maps, and original adventures."/>
-  <title>XLWORKSHOP — Home</title>
+  <meta name="description" content="XLWorkshop Help — How to install Minecraft Bedrock maps on Android, iOS, and Windows. Version guide included."/>
+  <title>XLWORKSHOP — Help & Installation</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-<!-- Ambient layers -->
 <div class="stars-layer"></div>
 <div class="fog-layer"></div>
 <div class="fog-layer fog-mid"></div>
@@ -20,11 +17,11 @@
 <!-- Navbar -->
 <nav class="navbar">
   <a href="index.html" class="nav-logo">
-   <img src="images/logo.png" style="width:36px;height:31px;border-radius:8px;object-fit:contain;" alt="Logo"/>
+    <div class="nav-logo-icon">🔥</div>
     <span class="nav-logo-text">XLWORKSHOP</span>
   </a>
   <ul class="nav-links">
-    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="index.html">Home</a></li>
     <li class="nav-dropdown">
       <a href="#">Creations</a>
       <div class="dropdown-menu">
@@ -33,7 +30,7 @@
         <a href="paid-maps.html">⭐ Paid Maps</a>
       </div>
     </li>
-    <li><a href="help.html">Help</a></li>
+    <li><a href="help.html" class="active">Help</a></li>
   </ul>
   <button class="nav-hamburger" id="navBurger" aria-label="Menu">
     <span></span><span></span><span></span>
@@ -50,179 +47,130 @@
 
 <div class="page-content">
 
-  <!-- ── HERO ── -->
-  <section class="hero">
-    <div class="hero-moon"></div>
-    <div class="hero-inner">
-      <div class="hero-eyebrow">Minecraft Bedrock Edition</div>
-      <h1 class="hero-title">XL<span>CREATIONS</span></h1>
-      <p class="hero-subtitle">Workshop</p>
-      <p class="hero-bio">
-        Hello, guild members! I'm <strong style="color:var(--flame-bright)">Hizaki</strong>, a Minecraft Bedrock map creator.
-        I recreate popular games as fully playable Minecraft experiences, and develop original maps and projects of my own.
-        From free adventures to premium paid experiences — every build is crafted with care.
-      </p>
-      <div class="hero-socials">
-        <a href="https://youtube.com/@xl300creations12" target="_blank" class="social-btn youtube">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
-          YouTube
-        </a>
-        <a href="https://discord.gg/Dy3G4WnKxw" target="_blank" class="social-btn discord">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3c-.2.4-.5.9-.7 1.3a18.3 18.3 0 0 0-5.4 0A13.7 13.7 0 0 0 8.6 3 19.9 19.9 0 0 0 3.7 4.4C.5 9.3-.3 14 .1 18.6a20 20 0 0 0 6 3 14.7 14.7 0 0 0 1.3-2.1 13 13 0 0 1-2-.9l.5-.4a14.3 14.3 0 0 0 12.2 0l.5.4a13 13 0 0 1-2 1 14.4 14.4 0 0 0 1.3 2 20 20 0 0 0 6-3c.5-5.2-.8-9.8-3.6-14.2zM8 15.5c-1.2 0-2.1-1.1-2.1-2.4S6.8 10.6 8 10.6s2.1 1.1 2.1 2.5S9.1 15.5 8 15.5zm8 0c-1.2 0-2.1-1.1-2.1-2.4s1-2.5 2.1-2.5 2.1 1.1 2.1 2.5-1 2.4-2.1 2.4z"/></svg>
-          Discord
-        </a>
-        <a href="https://ko-fi.com/xl300creations" target="_blank" class="social-btn kofi">
-          ☕ Support on Ko-fi
-        </a>
-      </div>
-      <div class="hero-cta-row">
-        <a href="maps.html" class="btn-primary">🗺️ Browse Maps</a>
-        <a href="paid-maps.html" class="btn-secondary">⭐ Premium Maps</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── DIVIDER ── -->
-  <div style="max-width:1200px;margin:0 auto;padding:0 2rem;">
-    <div class="nature-divider"><span class="nature-divider-icon">🌿</span></div>
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <p class="sub">📖 Guide</p>
+    <h1>Help & Installation</h1>
+    <p class="desc">Step-by-step guides for installing maps on Android, iOS, and Windows. Version info included.</p>
   </div>
 
-  <!-- ── FEATURED MAPS ── -->
-  <section class="section fade-up">
-    <div class="section-heading">
-      <p class="label">🗺️ Featured Creations</p>
-      <h2>Explore the Workshop</h2>
-      <p>A curated look at maps built through creativity and experimentation — each one a fully playable Minecraft experience.</p>
+  <div class="help-section">
+
+    <!-- Quick Nav -->
+    <div class="notice-banner fade-up" style="margin-bottom:2rem;">
+      <span class="icon">📋</span>
+      <p>Jump to: <a href="#mcworld">.mcworld install</a> · <a href="#zip">.zip install</a> · <a href="#version-guide">Version matching guide</a> · <a href="#troubleshoot">Troubleshooting</a></p>
     </div>
 
-    <div class="cards-grid">
+    <!-- ── MCWORLD METHOD ── -->
+    <div id="mcworld" style="margin-bottom:2.5rem;" class="fade-up">
+      <h2 style="font-family:'Cinzel',serif;font-size:1.5rem;color:var(--ember-light);margin-bottom:0.25rem;">Installing a .mcworld File</h2>
+      <p style="font-size:0.85rem;color:var(--ember-orange);margin-bottom:1.25rem;text-transform:uppercase;letter-spacing:0.1em;">✅ Recommended — Works on Android, iOS & Windows 10/11</p>
 
-      <!-- Poppy Playtime CH2 -->
-      <div class="map-card fade-up">
-      <img class="map-card-img" src="images/poppy-ch2.jpg" alt="Poppy Playtime Ch2"/>
-        <div class="map-card-body">
-          <div class="map-card-badges">
-            <span class="badge badge-red">Horror</span>
-            <span class="badge badge-green">Available</span>
-          </div>
-          <div class="map-card-title">Poppy Playtime</div>
-          <div class="map-card-sub">Chapter 2 — Fly in a Web</div>
-          <p class="map-card-desc">After Huggy Wuggy's fall, go deeper into the factory. A new terror awaits — Mommy Long Legs. Escape her web of games and uncover the secrets buried beneath decades of silence.</p>
-          <div class="map-card-meta">
-            <span>🎮 Bedrock</span><span class="sep">·</span>
-            <span>📦 v1.18.32</span>
-          </div>
-          <div class="map-card-actions">
-            <a href="https://link-center.net/653907/poppy-playtime-ch2-map" target="_blank" class="btn-download">⬇ Download</a>
-          </div>
-        </div>
+      <div class="install-step">
+        <h4>Step 1 — Download the file</h4>
+        <p>Download the <code style="background:rgba(217,83,30,0.15);color:var(--flame-bright);padding:0.1rem 0.4rem;border-radius:3px;">.mcworld</code> file from the download link on the map page.</p>
       </div>
-
-      <!-- Garten of BanBan -->
-      <div class="map-card fade-up">
-      <img class="map-card-img" src="images/banban.jpg" alt="Garten of BanBan"/>
-        <div class="map-card-body">
-          <div class="map-card-badges">
-            <span class="badge badge-red">Horror</span>
-            <span class="badge badge-green">Available</span>
-          </div>
-          <div class="map-card-title">Garten of BanBan</div>
-          <div class="map-card-sub">Chapter 1</div>
-          <p class="map-card-desc">Enter Banban's Kindergarten and make some friends. Explore the mysterious establishment, don't lose your sanity, and uncover the horrifying truth — you are far from alone.</p>
-          <div class="map-card-meta">
-            <span>🎮 Bedrock</span><span class="sep">·</span>
-            <span>📦 v1.18.32</span>
-          </div>
-          <div class="map-card-actions">
-            <a href="https://link-center.net/653907/garten-of-banban-map" target="_blank" class="btn-download">⬇ Download</a>
-          </div>
-        </div>
+      <div class="install-step">
+        <h4>Step 2 — Open the file</h4>
+        <p>Tap or double-click the downloaded <code style="background:rgba(217,83,30,0.15);color:var(--flame-bright);padding:0.1rem 0.4rem;border-radius:3px;">.mcworld</code> file. Minecraft will launch automatically and begin importing.</p>
       </div>
-
-      <!-- DOORS HOTEL+ DEMO -->
-      <div class="map-card fade-up">
-       <img class="map-card-img" src="images/doors.jpg" alt="DOORS Hotel+"/>
-        <div class="map-card-body">
-          <div class="map-card-badges">
-            <span class="badge badge-amber">Demo</span>
-            <span class="badge badge-green">Available</span>
-          </div>
-          <div class="map-card-title">DOORS Hotel+</div>
-          <div class="map-card-sub">Demo</div>
-          <p class="map-card-desc">Navigate a mysterious hotel with 100 rooms, avoiding dangerous entities with unique mechanics. This demo lets you experience the atmosphere and early floors of this Roblox classic — now in Minecraft.</p>
-          <div class="map-card-meta">
-            <span>🎮 Bedrock</span><span class="sep">·</span>
-            <span>📦 v1.20.50</span>
-          </div>
-          <div class="map-card-actions">
-            <a href="https://www.mediafire.com/file/igrb4uus4deu816/DOORS+MAP+DEMO.mcworld/file" target="_blank" class="btn-download">⬇ Download</a>
-          </div>
-        </div>
+      <div class="install-step">
+        <h4>Step 3 — Wait for import</h4>
+        <p>Wait for the "Successfully Imported" message to appear in Minecraft.</p>
       </div>
-
+      <div class="install-step">
+        <h4>Step 4 — Play</h4>
+        <p>Go to <strong>Play → Worlds</strong>, find the map in your world list, and tap to start playing.</p>
+      </div>
     </div>
 
-    <div style="text-align:center; margin-top:2.5rem;">
-      <a href="maps.html" class="btn-secondary">View All Maps →</a>
-    </div>
-  </section>
+    <!-- ── ZIP METHOD ── -->
+    <div id="zip" style="margin-bottom:2.5rem;" class="fade-up">
+      <h2 style="font-family:'Cinzel',serif;font-size:1.5rem;color:var(--ember-light);margin-bottom:0.25rem;">Installing a .zip File</h2>
+      <p style="font-size:0.85rem;color:var(--ember-orange);margin-bottom:1.25rem;text-transform:uppercase;letter-spacing:0.1em;">Manual Method — For Older Maps</p>
 
-  <!-- ── CAMPFIRE DIVIDER ── -->
-  <div style="max-width:1200px;margin:0 auto;padding:0 2rem;">
-    <div class="nature-divider"><span class="nature-divider-icon">🔥</span></div>
+      <div class="install-step">
+        <h4>Step 1 — Download and extract</h4>
+        <p>Download the <code style="background:rgba(217,83,30,0.15);color:var(--flame-bright);padding:0.1rem 0.4rem;border-radius:3px;">.zip</code> file and extract it using your device's file manager or a tool like WinRAR / 7-Zip.</p>
+      </div>
+      <div class="install-step">
+        <h4>Step 2 — Confirm extraction contents</h4>
+        <p>Make sure the extracted folder contains these files directly (not nested inside another folder):</p>
+        <ul style="margin-top:0.5rem;">
+          <li><code class="code-path">level.dat</code></li>
+          <li><code class="code-path">db/</code> folder</li>
+        </ul>
+      </div>
+      <div class="install-step">
+        <h4>Step 3 — Move the folder to the right location</h4>
+        <p style="margin-bottom:0.5rem;"><strong style="color:var(--flame-bright);">Android:</strong></p>
+        <code class="code-path">Internal Storage → Android → data → com.mojang.minecraftpe → files → games → com.mojang → minecraftWorlds</code>
+        <p style="margin-top:0.75rem;margin-bottom:0.5rem;"><strong style="color:var(--flame-bright);">Windows 10/11:</strong></p>
+        <code class="code-path">C:\Users\YourName\AppData\Local\Packages\Microsoft.MinecraftUWP_...\LocalState\games\com.mojang\minecraftWorlds</code>
+        <p style="margin-top:0.5rem;font-size:0.8rem;color:var(--text-dim);">Tip: Press <kbd style="background:var(--stone-mid);padding:0.1rem 0.3rem;border-radius:3px;font-family:monospace;">Win + R</kbd> and type <code class="code-path">%localappdata%\Packages</code> to find it faster on Windows.</p>
+      </div>
+      <div class="install-step">
+        <h4>Step 4 — Restart and play</h4>
+        <p>Fully restart Minecraft, then go to <strong>Play → Worlds</strong> to find and open your map.</p>
+      </div>
+    </div>
+
+    <!-- ── VERSION GUIDE ── -->
+    <div id="version-guide" class="version-guide fade-up" style="margin-bottom:2.5rem;">
+      <h3>🗓️ Why Version Matters — And How to Match It</h3>
+      <p style="margin-bottom:0.75rem;">Older maps may use features or behaviours that were changed or removed in newer Minecraft versions. Always check the version listed on the map page before downloading.</p>
+
+      <p style="margin-bottom:0.5rem;font-weight:600;color:#93c5fd;">How to install an older Minecraft version:</p>
+      <ul style="margin-bottom:0.75rem;">
+        <li><strong>Android:</strong> Search for an older <code style="background:rgba(26,58,92,0.4);color:#93c5fd;padding:0.1rem 0.4rem;border-radius:3px;">.apk</code> from a trusted source like APKMirror, or use the Minecraft version history in the Google Play Beta program.</li>
+        <li style="margin-top:0.4rem;"><strong>Windows:</strong> Open the Microsoft Store, go to your Minecraft library, and use "Manage" to access version history — or use Xbox App Game Manager.</li>
+        <li style="margin-top:0.4rem;"><strong>iOS:</strong> Version switching on iOS is limited. Check if the version is still available through TestFlight or App Store history.</li>
+      </ul>
+
+      <p style="font-size:0.8rem;color:#7db3d8;font-style:italic;">⚠️ Note: Always back up your existing Minecraft worlds before switching versions.</p>
+    </div>
+
+    <!-- ── IMPORTANT NOTES ── -->
+    <div class="help-alert fade-up" style="margin-bottom:2rem;">
+      <p><strong>⚠️ Important Notes Before Playing</strong></p>
+      <ul style="margin-top:0.5rem;padding-left:1.25rem;color:#fde68a;">
+        <li>Make sure your Minecraft version matches the map's required version before installing.</li>
+        <li>Do not place the world folder inside another folder — it must be at the root level.</li>
+        <li>Ensure the file is fully extracted before moving it.</li>
+        <li>If the world doesn't appear, double-check the folder path and fully restart the game.</li>
+      </ul>
+    </div>
+
+    <!-- ── TROUBLESHOOT ── -->
+    <div id="troubleshoot" class="fade-up" style="margin-bottom:2rem;">
+      <h2 style="font-family:'Cinzel',serif;font-size:1.5rem;color:var(--ember-light);margin-bottom:1rem;">Troubleshooting</h2>
+
+      <div class="install-step">
+        <h4>World doesn't appear in the list</h4>
+        <p>Check that the folder path is correct and the folder is not nested. Restart Minecraft completely — not just minimize it.</p>
+      </div>
+      <div class="install-step">
+        <h4>Import failed or crashes</h4>
+        <p>You're likely on the wrong Minecraft version. Check the map page for the required version and match it exactly.</p>
+      </div>
+      <div class="install-step">
+        <h4>Textures look wrong or missing</h4>
+        <p>Some maps require a specific resource pack. Check the map's download page or description for any included addons, and make sure they're applied in World Settings.</p>
+      </div>
+      <div class="install-step">
+        <h4>Still stuck?</h4>
+        <p>Join the <a href="https://discord.gg/Dy3G4WnKxw" target="_blank" style="color:var(--flame-bright);">Discord server</a> and ask in the support channel — the community can usually help quickly.</p>
+      </div>
+    </div>
+
+    <div style="text-align:center;padding:2rem 0;" class="fade-up">
+      <p style="font-family:'Lora',serif;font-style:italic;color:var(--text-muted);margin-bottom:1rem;">Still have questions? The Discord community is always around.</p>
+      <a href="https://discord.gg/Dy3G4WnKxw" target="_blank" class="btn-primary">Join the Discord →</a>
+    </div>
+
   </div>
-
-  <!-- ── ABOUT STRIP ── -->
-  <div class="section-full section-bg fade-up">
-    <div class="section" style="padding-top:3rem;padding-bottom:3rem;">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;" class="about-grid">
-        <div>
-          <p class="label" style="font-size:0.75rem;font-weight:600;letter-spacing:0.25em;text-transform:uppercase;color:var(--ember-orange);margin-bottom:0.6rem;">About the Creator</p>
-          <h2 style="font-family:'Cinzel',serif;font-size:clamp(1.4rem,3vw,2rem);color:var(--ember-light);margin-bottom:1rem;">A Workshop in the Forest</h2>
-          <p style="font-family:'Lora',serif;font-size:0.95rem;line-height:1.8;color:var(--text-muted);font-style:italic;margin-bottom:1rem;">
-            Every map starts as an idea — a game I love, a world I want to build, a challenge I want to solve. Then comes the long nights of crafting in Bedrock, testing every mechanic, refining every corner.
-          </p>
-          <p style="font-size:0.875rem;line-height:1.7;color:var(--text-muted);">
-            I focus on creating functional, immersive, and enjoyable experiences. Free maps, demos, and premium paid projects — each one built with the same care and attention to detail.
-          </p>
-        </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
-          <div style="background:rgba(42,15,10,0.7);border:1px solid var(--border-ember);border-radius:12px;padding:1.5rem;text-align:center;">
-            <div style="font-size:2rem;margin-bottom:0.5rem;">🗺️</div>
-            <div style="font-family:'Cinzel',serif;font-size:1.5rem;color:var(--flame-bright);font-weight:700;">7+</div>
-            <div style="font-size:0.78rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:0.1em;">Maps Built</div>
-          </div>
-          <div style="background:rgba(42,15,10,0.7);border:1px solid var(--border-ember);border-radius:12px;padding:1.5rem;text-align:center;">
-            <div style="font-size:2rem;margin-bottom:0.5rem;">🎨</div>
-            <div style="font-family:'Cinzel',serif;font-size:1.5rem;color:var(--flame-bright);font-weight:700;">4</div>
-            <div style="font-size:0.78rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:0.1em;">Texture Packs</div>
-          </div>
-          <div style="background:rgba(42,15,10,0.7);border:1px solid var(--border-ember);border-radius:12px;padding:1.5rem;text-align:center;">
-            <div style="font-size:2rem;margin-bottom:0.5rem;">⭐</div>
-            <div style="font-family:'Cinzel',serif;font-size:1.5rem;color:var(--flame-bright);font-weight:700;">1</div>
-            <div style="font-size:0.78rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:0.1em;">Premium Series</div>
-          </div>
-          <div style="background:rgba(42,15,10,0.7);border:1px solid var(--border-ember);border-radius:12px;padding:1.5rem;text-align:center;">
-            <div style="font-size:2rem;margin-bottom:0.5rem;">🎮</div>
-            <div style="font-family:'Cinzel',serif;font-size:1.5rem;color:var(--flame-bright);font-weight:700;">BE</div>
-            <div style="font-size:0.78rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:0.1em;">Bedrock Only</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── NEED HELP ── -->
-  <section class="section fade-up" style="text-align:center;">
-    <div class="campfire-section" style="padding:0;">
-      <div class="campfire-glow">🔥</div>
-      <h2 style="font-family:'Cinzel',serif;font-size:1.8rem;color:var(--ember-light);margin-bottom:0.75rem;">New to installing maps?</h2>
-      <p style="font-family:'Lora',serif;color:var(--text-muted);font-style:italic;margin-bottom:1.5rem;max-width:440px;margin-left:auto;margin-right:auto;">Step-by-step installation guides for Android, iOS, and Windows — including how to match the right Minecraft version.</p>
-      <a href="help.html" class="btn-primary">📖 View Installation Guide</a>
-    </div>
-  </section>
-
-</div><!-- end page-content -->
+</div>
 
 <!-- Footer -->
 <footer class="footer">
@@ -243,9 +191,6 @@
   </div>
 </footer>
 
-<style>
-@media(max-width:768px){.about-grid{grid-template-columns:1fr !important;}}
-</style>
 <script src="shared.js"></script>
 </body>
 </html>
